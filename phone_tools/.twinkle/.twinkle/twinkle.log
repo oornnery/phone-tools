@@ -1,0 +1,879 @@
++++ 4-1-2024 15:07:04.225298 INFO NORMAL t_log::t_log
+Twinkle 1.10.2, February 14, 2018
+---
+
++++ 4-1-2024 15:07:04.225721 INFO NORMAL t_log::t_log
+Built with support for: ALSA, Speex
+---
+
++++ 4-1-2024 15:07:04.225754 INFO NORMAL ::main
+Threading implementation is NPTL.
+---
+
++++ 4-1-2024 15:07:04.225927 INFO NORMAL t_user::read_config
+Reading config: 062099137.cfg
+---
+
++++ 4-1-2024 15:07:04.226481 INFO NORMAL t_phone_user::t_phone_user
+062099137: buddy list loaded.
+---
+
++++ 4-1-2024 15:07:04.226620 INFO NORMAL t_user::read_config
+Reading config: 675f26813e29bbec258383e12fb0.cfg
+---
+
++++ 4-1-2024 15:07:04.226834 INFO NORMAL t_phone_user::t_phone_user
+675f26813e29bbec258383e12fb0: buddy list loaded.
+---
+
++++ 4-1-2024 15:07:04.227001 INFO NORMAL ::main
+ICMP processing enabled.
+---
+
++++ 4-1-2024 15:07:04.229342 INFO NORMAL ::main
+Created local socket: /home/souzaf/.twinkle/.cmdsock
+---
+
++++ 4-1-2024 15:07:04.231548 INFO NORMAL t_alsa_io::open
+Opening ALSA device: default
+play
+---
+
++++ 4-1-2024 15:07:04.236249 DEBUG NORMAL t_alsa_io::open
+snd_pcm_open succeeded, handle = 0x555e7cbb73d0
+---
+
++++ 4-1-2024 15:07:04.242973 DEBUG NORMAL t_alsa_io::open
+ALSA playback buffer settings.
+Rate = 8000 frames/sec
+Frame size = 2 bytes
+Periods = 32
+Period size = 256 bytes
+Buffer size = 8192 bytes
+Can pause: yes
+---
+
++++ 4-1-2024 15:07:04.243108 DEBUG NORMAL t_alsa_io::~t_alsa_io
+snd_pcm_close, handle = 0x555e7cbb73d0
+---
+
++++ 4-1-2024 15:07:04.243606 INFO NORMAL t_alsa_io::open
+Opening ALSA device: default
+play
+capture
+---
+
++++ 4-1-2024 15:07:04.243669 INFO NORMAL t_alsa_io::open
+Opening ALSA device: default
+play
+---
+
++++ 4-1-2024 15:07:04.245281 DEBUG NORMAL t_alsa_io::open
+snd_pcm_open succeeded, handle = 0x555e7cbb94f0
+---
+
++++ 4-1-2024 15:07:04.251012 DEBUG NORMAL t_alsa_io::open
+ALSA playback buffer settings.
+Rate = 8000 frames/sec
+Frame size = 2 bytes
+Periods = 32
+Period size = 256 bytes
+Buffer size = 8192 bytes
+Can pause: yes
+---
+
++++ 4-1-2024 15:07:04.251202 INFO NORMAL t_alsa_io::open
+Opening ALSA device: default
+capture
+---
+
++++ 4-1-2024 15:07:04.252743 DEBUG NORMAL t_alsa_io::open
+snd_pcm_open succeeded, handle = 0x555e7cbc99d0
+---
+
++++ 4-1-2024 15:07:04.485263 DEBUG NORMAL t_alsa_io::open
+ALSA capture buffer settings.
+Rate = 8000 frames/sec
+Frame size = 2 bytes
+Periods = 64
+Period size = 128 bytes
+Buffer size = 8192 bytes
+Can pause: no
+---
+
++++ 4-1-2024 15:07:04.485360 DEBUG NORMAL t_alsa_io::~t_alsa_io
+snd_pcm_close, handle = 0x555e7cbb94f0
+---
+
++++ 4-1-2024 15:07:04.485687 DEBUG NORMAL t_alsa_io::~t_alsa_io
+snd_pcm_close, handle = 0x555e7cbc99d0
+---
+
++++ 4-1-2024 15:07:04.486221 INFO NORMAL t_alsa_io::open
+Opening ALSA device: default
+play
+capture
+---
+
++++ 4-1-2024 15:07:04.486276 INFO NORMAL t_alsa_io::open
+Opening ALSA device: default
+play
+---
+
++++ 4-1-2024 15:07:04.505830 DEBUG NORMAL t_alsa_io::open
+snd_pcm_open succeeded, handle = 0x555e7cbb9960
+---
+
++++ 4-1-2024 15:07:04.513190 DEBUG NORMAL t_alsa_io::open
+ALSA playback buffer settings.
+Rate = 8000 frames/sec
+Frame size = 2 bytes
+Periods = 32
+Period size = 256 bytes
+Buffer size = 8192 bytes
+Can pause: yes
+---
+
++++ 4-1-2024 15:07:04.513292 INFO NORMAL t_alsa_io::open
+Opening ALSA device: default
+capture
+---
+
++++ 4-1-2024 15:07:04.514611 DEBUG NORMAL t_alsa_io::open
+snd_pcm_open succeeded, handle = 0x555e7cbc6400
+---
+
++++ 4-1-2024 15:07:04.585650 DEBUG NORMAL t_alsa_io::open
+ALSA capture buffer settings.
+Rate = 8000 frames/sec
+Frame size = 2 bytes
+Periods = 64
+Period size = 128 bytes
+Buffer size = 8192 bytes
+Can pause: no
+---
+
++++ 4-1-2024 15:07:04.585733 DEBUG NORMAL t_alsa_io::~t_alsa_io
+snd_pcm_close, handle = 0x555e7cbb9960
+---
+
++++ 4-1-2024 15:07:04.586139 DEBUG NORMAL t_alsa_io::~t_alsa_io
+snd_pcm_close, handle = 0x555e7cbc6400
+---
+
++++ 4-1-2024 15:07:04.798602 INFO SIP ::send_sip_udp
+Send to: udp:177.53.194.248:5060
+REGISTER sip:proxy2.idtbrasilhosted.com SIP/2.0
+Via: SIP/2.0/UDP 172.26.162.169;rport;branch=z9hG4bKytkjmkgy
+Max-Forwards: 70
+To: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>
+From: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>;tag=ktntn
+Call-ID: kfzdydefmhcjhxi@IDTBR99.AM.IDTCORP.NET
+CSeq: 311 REGISTER
+Contact: <sip:062099137@172.26.162.169>;expires=3600
+Allow: INVITE,ACK,BYE,CANCEL,OPTIONS,PRACK,REFER,NOTIFY,SUBSCRIBE,INFO,MESSAGE
+User-Agent: Twinkle/1.10.2
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:07:04.946061 INFO SIP ::send_sip_udp
+Send to: udp:207.202.17.126:6070
+REGISTER sip:sip.t1-n34.prod.n2p.io:6070 SIP/2.0
+Via: SIP/2.0/UDP 172.26.162.169;rport;branch=z9hG4bKaojzhvkw
+Max-Forwards: 70
+To: "sip-3" <sip:675f26813e29bbec258383e12fb0@sip.t1-n34.prod.n2p.io:6070>
+From: "sip-3" <sip:675f26813e29bbec258383e12fb0@sip.t1-n34.prod.n2p.io:6070>;tag=jdntw
+Call-ID: wpyiwamudsbrbdc@IDTBR99.AM.IDTCORP.NET
+CSeq: 420 REGISTER
+Contact: <sip:675f26813e29bbec258383e12fb0@172.26.162.169>;expires=3600
+Allow: INVITE,ACK,BYE,CANCEL,OPTIONS,PRACK,REFER,NOTIFY,SUBSCRIBE,INFO,MESSAGE
+User-Agent: Twinkle/1.10.2
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:07:05.055931 INFO SIP ::process_sip_msg
+Received from: udp:177.53.194.248:5060
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 172.26.162.169;rport=31734;branch=z9hG4bKytkjmkgy;received=216.53.105.167
+To: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>;tag=0541e709934c4e2126e96726938d6c48-2f50
+From: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>;tag=ktntn
+Call-ID: kfzdydefmhcjhxi@IDTBR99.AM.IDTCORP.NET
+CSeq: 311 REGISTER
+WWW-Authenticate: Digest realm="proxy2.idtbrasilhosted.com", nonce="ZZbz5mWW88jDDni0TGGVhbEP9KZwShK4"
+Server: IDT Brasil Hosted UA
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:07:05.056490 DEBUG NORMAL t_phone::handle_response_out_of_dialog
+Out of dialog matches phone user: 062099137
+---
+
++++ 4-1-2024 15:07:05.057407 INFO SIP ::send_sip_udp
+Send to: udp:177.53.194.248:5060
+REGISTER sip:proxy2.idtbrasilhosted.com SIP/2.0
+Via: SIP/2.0/UDP 172.26.162.169;rport;branch=z9hG4bKbaseruiu
+Max-Forwards: 70
+To: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>
+From: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>;tag=ktntn
+Call-ID: kfzdydefmhcjhxi@IDTBR99.AM.IDTCORP.NET
+CSeq: 312 REGISTER
+Contact: <sip:062099137@172.26.162.169>;expires=3600
+Authorization: Digest username="062099137@proxy2.idtbrasilhosted.com",realm="proxy2.idtbrasilhosted.com",nonce="ZZbz5mWW88jDDni0TGGVhbEP9KZwShK4",uri="sip:proxy2.idtbrasilhosted.com",response="18733a92ebf010fd90158739d0e4c142",algorithm=MD5
+Allow: INVITE,ACK,BYE,CANCEL,OPTIONS,PRACK,REFER,NOTIFY,SUBSCRIBE,INFO,MESSAGE
+User-Agent: Twinkle/1.10.2
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:07:05.186411 INFO SIP ::process_sip_msg
+Received from: udp:207.202.17.126:6070
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 172.26.162.169;rport=48040;branch=z9hG4bKaojzhvkw;received=216.53.105.167
+To: "sip-3" <sip:675f26813e29bbec258383e12fb0@sip.t1-n34.prod.n2p.io:6070>;tag=043a2eb29c44107de5471aa2971bc4f6.60f20000
+From: "sip-3" <sip:675f26813e29bbec258383e12fb0@sip.t1-n34.prod.n2p.io:6070>;tag=jdntw
+Call-ID: wpyiwamudsbrbdc@IDTBR99.AM.IDTCORP.NET
+CSeq: 420 REGISTER
+WWW-Authenticate: Digest realm="sip.t1-n34.prod.n2p.io", nonce="ZZb0BWWW88lguxQI6/cz+u8kJxCbhmW+"
+Server: kamailio (5.5.4 (x86_64/linux))
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:07:05.186765 DEBUG NORMAL t_phone::handle_response_out_of_dialog
+Out of dialog matches phone user: 675f26813e29bbec258383e12fb0
+---
+
++++ 4-1-2024 15:07:05.187186 INFO SIP ::send_sip_udp
+Send to: udp:207.202.17.126:6070
+REGISTER sip:sip.t1-n34.prod.n2p.io:6070 SIP/2.0
+Via: SIP/2.0/UDP 172.26.162.169;rport;branch=z9hG4bKqvtwpncz
+Max-Forwards: 70
+To: "sip-3" <sip:675f26813e29bbec258383e12fb0@sip.t1-n34.prod.n2p.io:6070>
+From: "sip-3" <sip:675f26813e29bbec258383e12fb0@sip.t1-n34.prod.n2p.io:6070>;tag=jdntw
+Call-ID: wpyiwamudsbrbdc@IDTBR99.AM.IDTCORP.NET
+CSeq: 421 REGISTER
+Contact: <sip:675f26813e29bbec258383e12fb0@172.26.162.169>;expires=3600
+Authorization: Digest username="675f26813e29bbec258383e12fb0@sip.t1-n34.prod.n2p.io:6070",realm="sip.t1-n34.prod.n2p.io",nonce="ZZb0BWWW88lguxQI6/cz+u8kJxCbhmW+",uri="sip:sip.t1-n34.prod.n2p.io:6070",response="a6b78b95a7f176986f7a9f16ac10f751",algorithm=MD5
+Allow: INVITE,ACK,BYE,CANCEL,OPTIONS,PRACK,REFER,NOTIFY,SUBSCRIBE,INFO,MESSAGE
+User-Agent: Twinkle/1.10.2
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:07:05.319634 INFO SIP ::process_sip_msg
+Received from: udp:177.53.194.248:5060
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 172.26.162.169;rport=31734;branch=z9hG4bKbaseruiu;received=216.53.105.167
+To: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>;tag=0541e709934c4e2126e96726938d6c48-2310
+From: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>;tag=ktntn
+Call-ID: kfzdydefmhcjhxi@IDTBR99.AM.IDTCORP.NET
+CSeq: 312 REGISTER
+Contact: <sip:062099137@10.65.5.2:61257;rinstance=9BC39D7F>;expires=377;received="sip:159.65.251.173:61257", <sip:062099137@10.235.128.199:3512;rinstance=6AD12773>;expires=204;received="sip:216.53.105.167:26747", <sip:062099137@172.26.162.169>;expires=3600;received="sip:216.53.105.167:31734"
+Server: IDT Brasil Hosted UA
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:07:05.319887 DEBUG NORMAL t_phone::handle_response_out_of_dialog
+Out of dialog matches phone user: 062099137
+---
+
++++ 4-1-2024 15:07:05.345896 INFO SIP ::send_sip_udp
+Send to: udp:177.53.194.248:5060
+PUBLISH sip:062099137@proxy2.idtbrasilhosted.com SIP/2.0
+Via: SIP/2.0/UDP 172.26.162.169;rport;branch=z9hG4bKkgkoagyw
+Max-Forwards: 70
+To: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>
+From: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>;tag=kpggp
+Call-ID: llflvobqbyiyshn@IDTBR99.AM.IDTCORP.NET
+CSeq: 482 PUBLISH
+Content-Type: application/pidf+xml
+Event: presence
+Expires: 3600
+User-Agent: Twinkle/1.10.2
+Content-Length: 210
+
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" entity="sip:062099137@proxy2.idtbrasilhosted.com"><tuple id="djrjax"><status><basic>open</basic></status></tuple></presence>
+
+---
+
++++ 4-1-2024 15:07:05.540840 INFO SIP ::process_sip_msg
+Received from: udp:207.202.17.126:6070
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 172.26.162.169;rport=48040;branch=z9hG4bKqvtwpncz;received=216.53.105.167
+To: "sip-3" <sip:675f26813e29bbec258383e12fb0@sip.t1-n34.prod.n2p.io:6070>;tag=043a2eb29c44107de5471aa2971bc4f6.60f20000
+From: "sip-3" <sip:675f26813e29bbec258383e12fb0@sip.t1-n34.prod.n2p.io:6070>;tag=jdntw
+Call-ID: wpyiwamudsbrbdc@IDTBR99.AM.IDTCORP.NET
+CSeq: 421 REGISTER
+WWW-Authenticate: Digest realm="sip.t1-n34.prod.n2p.io", nonce="ZZb0BWWW88lguxQI6/cz+u8kJxCbhmW+"
+Server: kamailio (5.5.4 (x86_64/linux))
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:07:05.541182 DEBUG NORMAL t_phone::handle_response_out_of_dialog
+Out of dialog matches phone user: 675f26813e29bbec258383e12fb0
+---
+
++++ 4-1-2024 15:07:05.541249 INFO NORMAL t_auth::authorize
+Asking user name and password failed.
+---
+
++++ 4-1-2024 15:07:05.603696 INFO SIP ::process_sip_msg
+Received from: udp:177.53.194.248:5060
+SIP/2.0 603 Declined
+Via: SIP/2.0/UDP 172.26.162.169;rport=31734;branch=z9hG4bKkgkoagyw;received=216.53.105.167
+To: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>;tag=fa156b5507b049b5ca2ef3c1163bb433.e7ab
+From: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>;tag=kpggp
+Call-ID: llflvobqbyiyshn@IDTBR99.AM.IDTCORP.NET
+CSeq: 482 PUBLISH
+Server: IDT Brasil Hosted UA
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:07:05.603922 DEBUG NORMAL t_phone::handle_response_out_of_dialog
+Out of dialog matches phone user: 062099137
+---
+
++++ 4-1-2024 15:07:05.603975 WARNING NORMAL t_epa::recv_response
+PUBLISH failure response.
+603 Declined
+Event: presence, URI: sip:062099137@proxy2.idtbrasilhosted.com, SIP-ETag: 
+---
+
++++ 4-1-2024 15:07:17.219748 INFO SIP ::process_sip_msg
+Received from: udp:177.53.194.248:5060
+OPTIONS sip:216.53.105.167:31734 SIP/2.0
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bK6f06.4fd48fe4000000000000000000000000.0
+To: <sip:216.53.105.167:31734>
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-bbf7
+CSeq: 10 OPTIONS
+Call-ID: 10068d9c8e3b402c-5188@177.53.194.248
+Max-Forwards: 70
+Content-Length: 0
+User-Agent: IDT Brasil Hosted UA
+
+
+---
+
++++ 4-1-2024 15:07:17.220292 INFO SIP ::send_sip_udp
+Send to: udp:177.53.194.248:5060
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bK6f06.4fd48fe4000000000000000000000000.0
+To: <sip:216.53.105.167:31734>;tag=joryv
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-bbf7
+Call-ID: 10068d9c8e3b402c-5188@177.53.194.248
+CSeq: 10 OPTIONS
+Server: Twinkle/1.10.2
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:08:07.239669 INFO SIP ::process_sip_msg
+Received from: udp:177.53.194.248:5060
+OPTIONS sip:216.53.105.167:31734 SIP/2.0
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bKae84.4a54a8d0000000000000000000000000.0
+To: <sip:216.53.105.167:31734>
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-b633
+CSeq: 10 OPTIONS
+Call-ID: 10068d9c8e3b4a56-5188@177.53.194.248
+Max-Forwards: 70
+Content-Length: 0
+User-Agent: IDT Brasil Hosted UA
+
+
+---
+
++++ 4-1-2024 15:08:07.240225 INFO SIP ::send_sip_udp
+Send to: udp:177.53.194.248:5060
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bKae84.4a54a8d0000000000000000000000000.0
+To: <sip:216.53.105.167:31734>;tag=aqhga
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-b633
+Call-ID: 10068d9c8e3b4a56-5188@177.53.194.248
+CSeq: 10 OPTIONS
+Server: Twinkle/1.10.2
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:08:57.415545 INFO SIP ::process_sip_msg
+Received from: udp:177.53.194.248:5060
+OPTIONS sip:216.53.105.167:31734 SIP/2.0
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bK37e.e5a49a05000000000000000000000000.0
+To: <sip:216.53.105.167:31734>
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-da1c
+CSeq: 10 OPTIONS
+Call-ID: 10068d9c8e3b5482-5188@177.53.194.248
+Max-Forwards: 70
+Content-Length: 0
+User-Agent: IDT Brasil Hosted UA
+
+
+---
+
++++ 4-1-2024 15:08:57.416073 INFO SIP ::send_sip_udp
+Send to: udp:177.53.194.248:5060
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bK37e.e5a49a05000000000000000000000000.0
+To: <sip:216.53.105.167:31734>;tag=xggwc
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-da1c
+Call-ID: 10068d9c8e3b5482-5188@177.53.194.248
+CSeq: 10 OPTIONS
+Server: Twinkle/1.10.2
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:09:47.543929 INFO SIP ::process_sip_msg
+Received from: udp:177.53.194.248:5060
+OPTIONS sip:216.53.105.167:31734 SIP/2.0
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bK8252.fa3aa0f0000000000000000000000000.0
+To: <sip:216.53.105.167:31734>
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-0422
+CSeq: 10 OPTIONS
+Call-ID: 10068d9c8e3b5eab-5188@177.53.194.248
+Max-Forwards: 70
+Content-Length: 0
+User-Agent: IDT Brasil Hosted UA
+
+
+---
+
++++ 4-1-2024 15:09:47.545027 INFO SIP ::send_sip_udp
+Send to: udp:177.53.194.248:5060
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bK8252.fa3aa0f0000000000000000000000000.0
+To: <sip:216.53.105.167:31734>;tag=thhge
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-0422
+Call-ID: 10068d9c8e3b5eab-5188@177.53.194.248
+CSeq: 10 OPTIONS
+Server: Twinkle/1.10.2
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:10:37.562585 INFO SIP ::process_sip_msg
+Received from: udp:177.53.194.248:5060
+OPTIONS sip:216.53.105.167:31734 SIP/2.0
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bK7e05.44146304000000000000000000000000.0
+To: <sip:216.53.105.167:31734>
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-12a6
+CSeq: 10 OPTIONS
+Call-ID: 10068d9c8e3b68d2-5188@177.53.194.248
+Max-Forwards: 70
+Content-Length: 0
+User-Agent: IDT Brasil Hosted UA
+
+
+---
+
++++ 4-1-2024 15:10:37.563167 INFO SIP ::send_sip_udp
+Send to: udp:177.53.194.248:5060
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bK7e05.44146304000000000000000000000000.0
+To: <sip:216.53.105.167:31734>;tag=yhwzh
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-12a6
+Call-ID: 10068d9c8e3b68d2-5188@177.53.194.248
+CSeq: 10 OPTIONS
+Server: Twinkle/1.10.2
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:11:27.682648 INFO SIP ::process_sip_msg
+Received from: udp:177.53.194.248:5060
+OPTIONS sip:216.53.105.167:31734 SIP/2.0
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bK6643.90198716000000000000000000000000.0
+To: <sip:216.53.105.167:31734>
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-54a9
+CSeq: 10 OPTIONS
+Call-ID: 10068d9c8e3b72f5-5188@177.53.194.248
+Max-Forwards: 70
+Content-Length: 0
+User-Agent: IDT Brasil Hosted UA
+
+
+---
+
++++ 4-1-2024 15:11:27.684109 INFO SIP ::send_sip_udp
+Send to: udp:177.53.194.248:5060
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bK6643.90198716000000000000000000000000.0
+To: <sip:216.53.105.167:31734>;tag=fzzmm
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-54a9
+Call-ID: 10068d9c8e3b72f5-5188@177.53.194.248
+CSeq: 10 OPTIONS
+Server: Twinkle/1.10.2
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:12:17.789571 INFO SIP ::process_sip_msg
+Received from: udp:177.53.194.248:5060
+OPTIONS sip:216.53.105.167:31734 SIP/2.0
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bK7f4b.1c1d5e33000000000000000000000000.0
+To: <sip:216.53.105.167:31734>
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-41c8
+CSeq: 10 OPTIONS
+Call-ID: 10068d9c8e3b7d1a-5188@177.53.194.248
+Max-Forwards: 70
+Content-Length: 0
+User-Agent: IDT Brasil Hosted UA
+
+
+---
+
++++ 4-1-2024 15:12:17.790206 INFO SIP ::send_sip_udp
+Send to: udp:177.53.194.248:5060
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bK7f4b.1c1d5e33000000000000000000000000.0
+To: <sip:216.53.105.167:31734>;tag=jvbcw
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-41c8
+Call-ID: 10068d9c8e3b7d1a-5188@177.53.194.248
+CSeq: 10 OPTIONS
+Server: Twinkle/1.10.2
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:13:07.909065 INFO SIP ::process_sip_msg
+Received from: udp:177.53.194.248:5060
+OPTIONS sip:216.53.105.167:31734 SIP/2.0
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bKc35f.437fe055000000000000000000000000.0
+To: <sip:216.53.105.167:31734>
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-5763
+CSeq: 10 OPTIONS
+Call-ID: 10068d9c8e3b873f-5188@177.53.194.248
+Max-Forwards: 70
+Content-Length: 0
+User-Agent: IDT Brasil Hosted UA
+
+
+---
+
++++ 4-1-2024 15:13:07.909574 INFO SIP ::send_sip_udp
+Send to: udp:177.53.194.248:5060
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bKc35f.437fe055000000000000000000000000.0
+To: <sip:216.53.105.167:31734>;tag=ycmfl
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-5763
+Call-ID: 10068d9c8e3b873f-5188@177.53.194.248
+CSeq: 10 OPTIONS
+Server: Twinkle/1.10.2
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:13:58.031821 INFO SIP ::process_sip_msg
+Received from: udp:177.53.194.248:5060
+OPTIONS sip:216.53.105.167:31734 SIP/2.0
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bK005.df386561000000000000000000000000.0
+To: <sip:216.53.105.167:31734>
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-8808
+CSeq: 10 OPTIONS
+Call-ID: 10068d9c8e3b9168-5188@177.53.194.248
+Max-Forwards: 70
+Content-Length: 0
+User-Agent: IDT Brasil Hosted UA
+
+
+---
+
++++ 4-1-2024 15:13:58.032452 INFO SIP ::send_sip_udp
+Send to: udp:177.53.194.248:5060
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 177.53.194.248;branch=z9hG4bK005.df386561000000000000000000000000.0
+To: <sip:216.53.105.167:31734>;tag=ocrwa
+From: <sip:voipnow@177.53.194.248>;tag=b2e6d946b1bc303eea3b2ab7e7de024b-8808
+Call-ID: 10068d9c8e3b9168-5188@177.53.194.248
+CSeq: 10 OPTIONS
+Server: Twinkle/1.10.2
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:14:08.067782 DEBUG NORMAL t_phone::terminate
+Clear all lines.
+---
+
++++ 4-1-2024 15:14:08.067892 DEBUG NORMAL t_epa::unpublish
+Nothing published, discard unpublish
+Event: presence, URI: sip:062099137@proxy2.idtbrasilhosted.com, SIP-ETag: 
+---
+
++++ 4-1-2024 15:14:08.068004 DEBUG NORMAL t_phone::terminate
+062099137: Deregister.
+---
+
++++ 4-1-2024 15:14:08.523585 DEBUG NORMAL t_epa::unpublish
+Nothing published, discard unpublish
+Event: presence, URI: sip:675f26813e29bbec258383e12fb0@sip.t1-n34.prod.n2p.io:6070, SIP-ETag: 
+---
+
++++ 4-1-2024 15:14:08.523734 INFO SIP ::send_sip_udp
+Send to: udp:177.53.194.248:5060
+REGISTER sip:proxy2.idtbrasilhosted.com SIP/2.0
+Via: SIP/2.0/UDP 172.26.162.169;rport;branch=z9hG4bKofelglsf
+Max-Forwards: 70
+To: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>
+From: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>;tag=wrkfx
+Call-ID: kfzdydefmhcjhxi@IDTBR99.AM.IDTCORP.NET
+CSeq: 313 REGISTER
+Contact: <sip:062099137@172.26.162.169>;expires=0
+Allow: INVITE,ACK,BYE,CANCEL,OPTIONS,PRACK,REFER,NOTIFY,SUBSCRIBE,INFO,MESSAGE
+User-Agent: Twinkle/1.10.2
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:14:08.780795 INFO SIP ::process_sip_msg
+Received from: udp:177.53.194.248:5060
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 172.26.162.169;rport=31734;branch=z9hG4bKofelglsf;received=216.53.105.167
+To: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>;tag=0541e709934c4e2126e96726938d6c48-f598
+From: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>;tag=wrkfx
+Call-ID: kfzdydefmhcjhxi@IDTBR99.AM.IDTCORP.NET
+CSeq: 313 REGISTER
+WWW-Authenticate: Digest realm="proxy2.idtbrasilhosted.com", nonce="ZZb1jmWW9XAVl2p0TDjo3WczI/qFLPSm"
+Server: IDT Brasil Hosted UA
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:14:08.781032 DEBUG NORMAL t_phone::handle_response_out_of_dialog
+Out of dialog matches phone user: 062099137
+---
+
++++ 4-1-2024 15:14:08.781642 INFO SIP ::send_sip_udp
+Send to: udp:177.53.194.248:5060
+REGISTER sip:proxy2.idtbrasilhosted.com SIP/2.0
+Via: SIP/2.0/UDP 172.26.162.169;rport;branch=z9hG4bKlcsbglxh
+Max-Forwards: 70
+To: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>
+From: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>;tag=wrkfx
+Call-ID: kfzdydefmhcjhxi@IDTBR99.AM.IDTCORP.NET
+CSeq: 314 REGISTER
+Contact: <sip:062099137@172.26.162.169>;expires=0
+Authorization: Digest username="062099137@proxy2.idtbrasilhosted.com",realm="proxy2.idtbrasilhosted.com",nonce="ZZb1jmWW9XAVl2p0TDjo3WczI/qFLPSm",uri="sip:proxy2.idtbrasilhosted.com",response="22a6be13431c212e5d2932a7d9bfd2bf",algorithm=MD5
+Allow: INVITE,ACK,BYE,CANCEL,OPTIONS,PRACK,REFER,NOTIFY,SUBSCRIBE,INFO,MESSAGE
+User-Agent: Twinkle/1.10.2
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:14:09.065924 INFO SIP ::process_sip_msg
+Received from: udp:177.53.194.248:5060
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 172.26.162.169;rport=31734;branch=z9hG4bKlcsbglxh;received=216.53.105.167
+To: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>;tag=0541e709934c4e2126e96726938d6c48-805c
+From: "sip-1" <sip:062099137@proxy2.idtbrasilhosted.com>;tag=wrkfx
+Call-ID: kfzdydefmhcjhxi@IDTBR99.AM.IDTCORP.NET
+CSeq: 314 REGISTER
+Contact: <sip:062099137@10.65.5.2:61257;rinstance=9BC39D7F>;expires=541;received="sip:159.65.251.173:61257", <sip:062099137@10.235.128.199:3512;rinstance=6AD12773>;expires=365;received="sip:216.53.105.167:26747"
+Server: IDT Brasil Hosted UA
+Content-Length: 0
+
+
+---
+
++++ 4-1-2024 15:14:09.066753 DEBUG NORMAL t_phone::handle_response_out_of_dialog
+Out of dialog matches phone user: 062099137
+---
+
++++ 4-1-2024 15:14:09.524133 DEBUG NORMAL t_phone::terminate
+062099137: Registration terminated.
+---
+
++++ 4-1-2024 15:14:09.524310 DEBUG NORMAL t_phone::terminate
+675f26813e29bbec258383e12fb0: Registration terminated.
+---
+
++++ 4-1-2024 15:14:09.524330 DEBUG NORMAL t_phone::terminate
+062099137: MWI subscription terminated.
+---
+
++++ 4-1-2024 15:14:09.524344 DEBUG NORMAL t_phone::terminate
+675f26813e29bbec258383e12fb0: MWI subscription terminated.
+---
+
++++ 4-1-2024 15:14:09.524359 DEBUG NORMAL t_phone::terminate
+062099137: presence subscriptions terminated.
+---
+
++++ 4-1-2024 15:14:09.524373 DEBUG NORMAL t_phone::terminate
+675f26813e29bbec258383e12fb0: presence subscriptions terminated.
+---
+
++++ 4-1-2024 15:14:09.524388 DEBUG NORMAL t_phone::terminate
+Waiting for all lines to become idle.
+---
+
++++ 4-1-2024 15:14:09.524402 DEBUG NORMAL t_phone::terminate
+Finished phone termination.
+---
+
++++ 4-1-2024 15:14:09.525928 DEBUG NORMAL ::main
+thr_listen_cmd stopped.
+---
+
++++ 4-1-2024 15:14:09.526515 DEBUG NORMAL ::main
+thr_listen_udp stopped.
+---
+
++++ 4-1-2024 15:14:09.526844 DEBUG NORMAL ::main
+thr_listen_conn_tcp stopped.
+---
+
++++ 4-1-2024 15:14:09.527118 INFO NORMAL ::listen_for_data_tcp
+TCP data listener terminated.
+---
+
++++ 4-1-2024 15:14:09.527318 INFO NORMAL ::tcp_sender_loop
+TCP sender terminated.
+---
+
++++ 4-1-2024 15:14:09.527521 DEBUG NORMAL ::main
+thr_listen_data_tcp stopped.
+---
+
++++ 4-1-2024 15:14:10.330225 INFO NORMAL ::connection_timeout_main
+Connection timeout handler terminated.
+---
+
++++ 4-1-2024 15:14:10.330660 DEBUG NORMAL ::main
+thr_conn_timeout_handler stopped.
+---
+
++++ 4-1-2024 15:14:10.331027 DEBUG NORMAL ::main
+thr_tcp_sender stopped.
+---
+
++++ 4-1-2024 15:14:10.331178 DEBUG NORMAL ::main
+thr_phone_uas stopped.
+---
+
++++ 4-1-2024 15:14:10.331478 DEBUG NORMAL ::main
+thr_sig_catcher stopped.
+---
+
++++ 4-1-2024 15:14:10.331677 DEBUG NORMAL ::main
+thr_alarm_catcher stopped.
+---
+
++++ 4-1-2024 15:14:10.332072 DEBUG NORMAL ::main
+thr_timekeeper stopped.
+---
+
++++ 4-1-2024 15:14:10.332258 DEBUG NORMAL ::main
+thr_sender stopped.
+---
+
++++ 4-1-2024 15:14:10.332961 DEBUG NORMAL t_userintf::~t_userintf
+thr_process_events stopped.
+---
+
++++ 4-1-2024 15:14:10.333041 INFO NORMAL t_event_queue::~t_event_queue
+Clean up event queue.
+---
+
++++ 4-1-2024 15:14:10.333121 INFO NORMAL t_phone::~t_phone
+Number of lines to cleanup: 3
+---
+
++++ 4-1-2024 15:14:10.333176 INFO NORMAL t_transaction_mgr::~t_transaction_mgr
+Clean up transaction manager.
+
+Deleting client transaction: 
+Tid: 15, Method: REGISTER, State: TS_COMPLETED
+
+Deleting client transaction: 
+Tid: 16, Method: REGISTER, State: TS_COMPLETED
+
+Deleting server transaction: 
+Tid: 14, Method: OPTIONS, State: TS_COMPLETED
+---
+
++++ 4-1-2024 15:14:10.333223 INFO NORMAL t_timekeeper::~t_timekeeper
+Clean up timekeeper.
+
+Deleting timer:
+Id: 46, Type: TMR_TRANSACTION, Timer: TIMER_K
+Duration: 5000, Relative duration: 4713
+Transaction id: 15
+
+Deleting timer:
+Id: 49, Type: TMR_TRANSACTION, Timer: TIMER_K
+Duration: 5000, Relative duration: 288
+Transaction id: 16
+
+Deleting timer:
+Id: 42, Type: TMR_TRANSACTION, Timer: TIMER_J
+Duration: 32000, Relative duration: 15962
+Transaction id: 14
+---
+
++++ 4-1-2024 15:14:10.333243 INFO NORMAL t_event_queue::~t_event_queue
+Clean up event queue.
+---
+
++++ 4-1-2024 15:14:10.333248 INFO NORMAL t_event_queue::~t_event_queue
+Clean up event queue.
+---
+
++++ 4-1-2024 15:14:10.333252 INFO NORMAL t_event_queue::~t_event_queue
+Clean up event queue.
+---
+
++++ 4-1-2024 15:14:10.333257 INFO NORMAL t_event_queue::~t_event_queue
+Clean up event queue.
+
+Deleting unprocessed event: 
+Type: EV_STOP_TIMER, Pointer: 0x555e7cb4fb20
+
+Deleting unprocessed event: 
+Type: EV_STOP_TIMER, Pointer: 0x7fb9e8006ea0
+
+Deleting unprocessed event: 
+Type: EV_STOP_TIMER, Pointer: 0x7fb9e8015fa0
+---
+
++++ 4-1-2024 15:14:10.333270 INFO MEMORY t_memman::report_stats
+Number of allocations: 1264
+Number of duplicate allocations: 0
+Number of de-allocations: 1264
+Number of mismatched de-allocations: 0
+Number of array/non-array mixed operations: 0
+Number of unallocated pointers: 0
+---
+
++++ 4-1-2024 15:14:10.333285 INFO MEMORY t_memman::report_leaks
+All pointers have correctly been deallocated.
+---
+
