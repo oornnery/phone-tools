@@ -21,6 +21,18 @@ Wrapper... for phone tools.
 
 ## Examples
 
+...
+
+## TODO:
+
+- Lines
+- Recording
+- Pcap
+- Config file (yaml)
+- Calls test file (yaml)
+
+
 ## Alternatives
+
 - [pytwinkle](https://github.com/RoberWare/pytwinkle.git)
 - [twinkle-py](https://github.com/forkcs/twinkle-py.git)
