@@ -20,3 +20,7 @@ Wrapper... for phone tools.
 - Line
 
 ## Examples
+
+## Alternatives
+- [pytwinkle](https://github.com/RoberWare/pytwinkle.git)
+- [twinkle-py](https://github.com/forkcs/twinkle-py.git)
